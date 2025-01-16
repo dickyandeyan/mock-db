@@ -1,19 +1,581 @@
 {
-    "posts": [
+  "posts": [
+    { "id": "1", "title": "Paid", "views": 100 },
+    { "id": "2", "title": "Unpaid", "views": 200 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "transaction": [
+    {
+      "id": "1",
+      "productId": "1",
+      "productName": "Kargo reguler",
+      "nominal": "IDR 15,123,400",
+      "tax": "IDR 1,523,400",
+      "insurance": "IDR 1,523,400",
+      "date": "06 Okt 24"
+    },
+    {
+      "id": "2",
+      "productId": "2",
+      "productName": "Kargo reguler",
+      "nominal": "IDR 15,123,400",
+      "tax": "IDR 1,523,400",
+      "insurance": "IDR 1,523,400",
+      "date": "06 Okt 24"
+    }
+  ],
+  "coa": {
+    "status": true,
+    "code": "000",
+    "message": "OK",
+    "data": {
+      "report": [
         {
-            "id": 1,
-            "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-            "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+          "groupId": "BSG01",
+          "groupName": "ASSET",
+          "groupTotal": {
+            "currentPeriod": 97594858,
+            "lastPeriod": 99846589
+          },
+          "categories": [
+            {
+              "categoryId": "BSC001",
+              "categoryName": "ASET LANCAR",
+              "categoryTotal": {
+                "currentPeriod": 62754238,
+                "lastPeriod": 73544010
+              },
+              "details": [
+                {
+                  "coaId": "111100000",
+                  "coaName": "Cash on Hand",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 10698078
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 15400350
+                  }
+                },
+                {
+                  "coaId": "111200000",
+                  "coaName": "Cash in Bank",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 16929745
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 15048006
+                  }
+                },
+                {
+                  "coaId": "112000000",
+                  "coaName": "Account Receivables",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 2272874
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 3145836
+                  }
+                },
+                {
+                  "coaId": "113000000",
+                  "coaName": "Other Receivables",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 2312122
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 9066680
+                  }
+                },
+                {
+                  "coaId": "114000000",
+                  "coaName": "Inventories",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 17429795
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 10784346
+                  }
+                },
+                {
+                  "coaId": "115000000",
+                  "coaName": "Prepaid & Cash Advance",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 2121044
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 2157070
+                  }
+                },
+                {
+                  "coaId": "116000000",
+                  "coaName": "Other Current Assets",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 10990580
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 17941722
+                  }
+                }
+              ]
+            },
+            {
+              "categoryId": "BSC002",
+              "categoryName": "ASET TIDAK LANCAR",
+              "categoryTotal": {
+                "currentPeriod": 34840620,
+                "lastPeriod": 26302579
+              },
+              "details": [
+                {
+                  "coaId": "121100000",
+                  "coaName": "Fixed Assets",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 4348292
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 1362103
+                  }
+                },
+                {
+                  "coaId": "122100000",
+                  "coaName": "Intangible Assets",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 11590567
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 14592552
+                  }
+                },
+                {
+                  "coaId": "123100000",
+                  "coaName": "Right of Use Assets",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 12918711
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 2899879
+                  }
+                },
+                {
+                  "coaId": "124000000",
+                  "coaName": "Other Non Current Assets",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 5983050
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 7448045
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-            "id": 2,
-            "title": "qui est esse",
-            "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-        },
-        {
-            "id": 3,
-            "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-            "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+          "groupId": "BSG02",
+          "groupName": "KEWAJIBAN DAN EKUITAS",
+          "groupTotal": {
+            "currentPeriod": 138716859,
+            "lastPeriod": 136932726
+          },
+          "categories": [
+            {
+              "categoryId": "BSC003",
+              "categoryName": "KEWAJIBAN JANGKA PENDEK",
+              "categoryTotal": {
+                "currentPeriod": 39384157,
+                "lastPeriod": 37737613
+              },
+              "details": [
+                {
+                  "coaId": "211000000",
+                  "coaName": "Account Payables",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 12512461
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 10361260
+                  }
+                },
+                {
+                  "coaId": "212000000",
+                  "coaName": "Other Payables",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 9990191
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 18220974
+                  }
+                },
+                {
+                  "coaId": "213000000",
+                  "coaName": "Accrued Expenses",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 15840260
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 7122572
+                  }
+                },
+                {
+                  "coaId": "214000000",
+                  "coaName": "Taxes Payable",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 1041245
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 2032807
+                  }
+                }
+              ]
+            },
+            {
+              "categoryId": "BSC004",
+              "categoryName": "KEWAJIBAN JANGKA PANJANG",
+              "categoryTotal": {
+                "currentPeriod": 25430670,
+                "lastPeriod": 37725359
+              },
+              "details": [
+                {
+                  "coaId": "221100000",
+                  "coaName": "Loan And Borrowings - Third Party",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 452898
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 19616146
+                  }
+                },
+                {
+                  "coaId": "221200000",
+                  "coaName": "Other Long Term Payable - Related Party",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 13921323
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 8832784
+                  }
+                },
+                {
+                  "coaId": "222000000",
+                  "coaName": "Other Long Term Liabilities - Other",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 11056449
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 9276429
+                  }
+                }
+              ]
+            },
+            {
+              "categoryId": "BSC005",
+              "categoryName": "EKUITAS",
+              "categoryTotal": {
+                "currentPeriod": 73902032,
+                "lastPeriod": 61469754
+              },
+              "details": [
+                {
+                  "coaId": "311000000",
+                  "coaName": "Equity - Share Capital",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 13609002
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 2081781
+                  }
+                },
+                {
+                  "coaId": "311000001",
+                  "coaName": "Treasury Shares",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 2933327
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 7028657
+                  }
+                },
+                {
+                  "coaId": "311000002",
+                  "coaName": "Equity - Foreign Exchange Rate",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 9506212
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 260047
+                  }
+                },
+                {
+                  "coaId": "311000003",
+                  "coaName": "Excess of paid in capital",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 5190364
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 15286432
+                  }
+                },
+                {
+                  "coaId": "311000004",
+                  "coaName": "paid in capital- Tax Amniesty",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 13119389
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 6444272
+                  }
+                },
+                {
+                  "coaId": "311000005",
+                  "coaName": "Deviden",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 985124
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 6562144
+                  }
+                },
+                {
+                  "coaId": "321000000",
+                  "coaName": "Laba tahun berjalan",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 17059339
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 18035420
+                  }
+                },
+                {
+                  "coaId": "322000000",
+                  "coaName": "Laba Ditahan",
+                  "currentPeriod": {
+                    "period": "2024-10",
+                    "periodName": "OCT-24",
+                    "amount": 11499275
+                  },
+                  "lastPeriod": {
+                    "period": "2024-09",
+                    "periodName": "SEP-24",
+                    "amount": 5771001
+                  }
+                }
+              ]
+            }
+          ]
         }
-    ]
+      ]
+    }
+  },
+  "summary-balance-control": [
+    {
+      "groupName": "Draft",
+      "data": [
+        {
+          "title": "Draft Biaya Baru",
+          "date": "22-08-2024",
+          "amount": 1910000,
+          "category": "Spent",
+          "spentType": "balance",
+          "status": "Reimbursable",
+          "link": null
+        }
+      ]
+    },
+    {
+      "groupName": "Pending",
+      "data": [
+        {
+          "title": "24 km “Travel to Idealist Design Studio”",
+          "date": "03-07-2024",
+          "amount": 120090,
+          "category": "Travelled",
+          "spentType": "trip",
+          "status": "Remibursable",
+          "link": null
+        },
+        {
+          "title": "Lajou Cafe and Resto “Dinner with client”",
+          "date": "03-07-2024",
+          "amount": 230000,
+          "category": "Travelled",
+          "spentType": "balance",
+          "status": "Remibursable",
+          "link": null
+        },
+        {
+          "title": "Macbook Pro 2021 “New device for new year”",
+          "date": "03-07-2024",
+          "amount": 22000000,
+          "category": "Spent",
+          "spentType": "balance",
+          "status": "Non-Remibursable",
+          "link": null
+        }
+      ]
+    }
+  ],
+  "transaction-credit": [
+    {
+      "recv_id": "#RCV9801",
+      "backsheet": "#BCK920001234",
+      "coa_name": "Accounts Receivable B2B Transactions",
+      "description": "Partner ABC",
+      "amount": 1523400,
+      "trx_type": "Non Cash",
+      "partner_office_id": "MTRABC01",
+      "trx_date": "06 Oct 24",
+      "action": "..."
+    },
+    {
+      "recv_id": "#RCV9802",
+      "backsheet": "#BCK920001234",
+      "coa_name": "Accounts Receivable B2B Transactions",
+      "description": "Partner DEF",
+      "amount": 1523400,
+      "trx_type": "BB",
+      "partner_office_id": "MTRDEF01",
+      "trx_date": "06 Oct 24",
+      "action": "..."
+    },
+    {
+      "recv_id": "#RCV9804",
+      "backsheet": "#BCK920001234",
+      "coa_name": "Accounts Receivable B2B Transactions",
+      "description": "Partner GHI",
+      "amount": 1523400,
+      "trx_type": "Non Cash",
+      "partner_office_id": "MTRGHI01",
+      "trx_date": "06 Oct 24",
+      "action": "..."
+    },
+    {
+      "recv_id": "#RCV3805",
+      "backsheet": "#BCK920001234",
+      "coa_name": "Accounts Receivable Branch BB Transactions",
+      "description": "Branch Semarang",
+      "amount": 1523400,
+      "trx_type": "Non Cash",
+      "partner_office_id": "BRCSMG01",
+      "trx_date": "06 Oct 24",
+      "action": "..."
+    },
+    {
+      "recv_id": "#RCV9804",
+      "backsheet": "#BCK920001234",
+      "coa_name": "Accounts Receivable Branch BB Transactions",
+      "description": "Branch Surabaya",
+      "amount": 1523400,
+      "trx_type": "BB",
+      "partner_office_id": "BRCSBY01",
+      "trx_date": "06 Oct 24",
+      "action": "..."
+    }
+  ]
 }
